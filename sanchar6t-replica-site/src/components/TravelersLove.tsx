@@ -100,7 +100,7 @@ const TravelersLove = () => {
                 <div style={{ display: "flex", flexDirection: "column", rowGap: "2px" }}>
                   <h3
                     style={{
-                      fontSize: "clamp(16px, 2.5vw, 18px)",
+                      fontSize: "clamp(16px, 2.5vw, 22px)",
                       fontWeight: "600",
                       color: "#4d361b",
                       margin: 0,
@@ -111,7 +111,7 @@ const TravelersLove = () => {
                   </h3>
                   <p
                     style={{
-                      fontSize: "clamp(12px, 2vw, 14px)",
+                      fontSize: "clamp(12px, 2vw, 22px)",
                       color: "#4d361b",
                       margin: 0,
                       fontFamily: "Inter, sans-serif"

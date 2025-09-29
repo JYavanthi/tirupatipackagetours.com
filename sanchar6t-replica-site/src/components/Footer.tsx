@@ -233,14 +233,14 @@ const Footer = () => {
               src={logoImg}
               alt="Sanchar6T"
               style={{
-                height: "clamp(80px, 12vw, 120px)",
+                height: "clamp(80px, 12vw, 140px)",
                 width: "auto",
                 marginBottom: "20px",
               }}
             />
             <p
               style={{
-                fontSize: "clamp(14px, 2vw, 16px)",
+                fontSize: "clamp(14px, 2vw, 20px)",
                 color: "#4d361b",
                 lineHeight: "1.6",
                 fontFamily: "Inter, sans-serif",
@@ -255,7 +255,7 @@ const Footer = () => {
           </div>
 
           {/* Middle Section - Contact Info */}
-          <div style={{ textAlign: "left" ,marginTop:"68px"}}>
+          <div style={{ textAlign: "left" ,marginTop:"106px"}}>
             <h3
               style={{
                 fontSize: "clamp(20px, 3vw, 24px)",
@@ -287,7 +287,7 @@ const Footer = () => {
                 style={{
                  
                   margin: 0,
-                  fontSize: "clamp(14px, 2vw, 16px)",
+                  fontSize: "clamp(14px, 2vw, 20px)",
                   listStylePosition: "inside",
                   fontFamily: "Inter, sans-serif",
                 }}
@@ -306,7 +306,7 @@ const Footer = () => {
             >
               <p
                 style={{
-                  fontSize: "clamp(14px, 2vw, 16px)",
+                  fontSize: "clamp(14px, 2vw, 20px)",
                   color: "#4d361b",
                   lineHeight: "1.6",
                   fontFamily: "Inter, sans-serif",
@@ -356,7 +356,7 @@ const Footer = () => {
         >
           <p
             style={{
-              fontSize: "clamp(12px, 2vw, 14px)",
+              fontSize: "clamp(12px, 2vw, 20px)",
               color: "#4d361b",
               fontFamily: "Inter, sans-serif",
               flex: "1",
@@ -378,7 +378,7 @@ const Footer = () => {
             <a
               href="#"
               style={{
-                fontSize: "clamp(12px, 2vw, 14px)",
+                fontSize: "clamp(12px, 2vw, 20px)",
                 color: "#4d361b",
                 textDecoration: "none",
                 fontFamily: "Inter, sans-serif",
@@ -391,7 +391,7 @@ const Footer = () => {
             <a
               href="#"
               style={{
-                fontSize: "clamp(12px, 2vw, 14px)",
+                fontSize: "clamp(12px, 2vw, 20px)",
                 color: "#4d361b",
                 textDecoration: "none",
                 fontFamily: "Inter, sans-serif",
@@ -405,7 +405,7 @@ const Footer = () => {
             <a
               href="#"
               style={{
-                fontSize: "clamp(12px, 2vw, 14px)",
+                fontSize: "clamp(12px, 2vw, 20px)",
                 color: "#4d361b",
                 textDecoration: "none",
                 fontFamily: "Inter, sans-serif",
@@ -419,7 +419,7 @@ const Footer = () => {
             <a
               href="#"
               style={{
-                fontSize: "clamp(12px, 2vw, 14px)",
+                fontSize: "clamp(12px, 2vw, 20px)",
                 color: "#4d361b",
                 textDecoration: "none",
                 fontFamily: "Inter, sans-serif",

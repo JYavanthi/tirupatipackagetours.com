@@ -9,6 +9,7 @@
     "msnodesqlv8": "^5.1.1"
   },
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "build-client": "cd ../sanchar6t-replica-site && npm install && npm run build && cp -r build ../backend/public"
   }
 }

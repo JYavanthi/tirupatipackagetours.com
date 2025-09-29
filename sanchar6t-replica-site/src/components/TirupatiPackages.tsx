@@ -26,7 +26,7 @@ const TirupatiPackages = () => {
         >
           <h2
             style={{
-              fontSize: "clamp(28px, 5vw, 42px)",
+              fontSize: "clamp(32px, 6vw, 38px)",
               fontWeight: "700",
               color: "#B45309",
               fontFamily: "Inter, sans-serif",
@@ -94,7 +94,7 @@ const TirupatiPackages = () => {
           <div style={{ flex: "1" }}>
             <h3
               style={{
-                fontSize: "clamp(20px, 3vw, 26px)",
+                fontSize: "clamp(28px, 3vw, 34px)",
                 fontWeight: "600",
                 color: "#6B4E3D",
                 marginBottom: "15px",
@@ -102,12 +102,12 @@ const TirupatiPackages = () => {
                 lineHeight: "1.4",
               }}
             >
-              Discover Tirupati by Bus & Temple Trails – 1 Night 1 Day{" "}
-              <span style={{ color: "#B45309" }}>[Free Dharshana]</span>
+              Tirupati 1 Night / 1 Days Dharma Darshan Package{" "}
+            
             </h3>
             <p
               style={{
-                fontSize: "clamp(14px, 2vw, 16px)",
+                fontSize: "clamp(25px, 2.5vw, 24px)",
                 color: "#6B4E3D",
                 fontFamily: "Inter, sans-serif",
                 lineHeight: "1.6",
@@ -178,7 +178,7 @@ const TirupatiPackages = () => {
           <div style={{ flex: "1" }}>
             <h3
               style={{
-                fontSize: "clamp(20px, 3vw, 26px)",
+                fontSize: "clamp(28px, 3vw, 34px)",
                 fontWeight: "600",
                 color: "#6B4E3D",
                 marginBottom: "15px",
@@ -191,7 +191,7 @@ const TirupatiPackages = () => {
             </h3>
             <p
               style={{
-                fontSize: "clamp(14px, 2vw, 16px)",
+                fontSize: "clamp(25px, 2.5vw, 24px)",
                 color: "#6B4E3D",
                 fontFamily: "Inter, sans-serif",
                 lineHeight: "1.6",

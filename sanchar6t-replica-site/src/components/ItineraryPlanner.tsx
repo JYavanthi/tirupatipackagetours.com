@@ -68,20 +68,20 @@ export default function ItineraryPlanner() {
             <h1 className="text-3xl md:text-4xl font-extrabold leading-tight">
               AI-Powered Darshan Planner
             </h1>
-            <p className="text-sm opacity-90 mt-2">
+            <p className="text-xl opacity-90 mt-2">
               Smart schedules, darshan slots, hotels, & activities at a glance.
             </p>
           </div>
           <div className="text-right mt-2 sm:mt-0">
-            <div className="text-xs text-white/80">Powered by</div>
-            <div className="mt-1 text-sm font-semibold">TechVaraha</div>
+            <div className="text-xl text-white/80">Powered by</div>
+            <div className="mt-1 text-xl font-semibold">TechVaraha</div>
           </div>
         </div>
 
         {/* Form */}
         <div className="mt-6 grid grid-cols-1 md:grid-cols-3 gap-4">
           <div>
-            <label className="text-xs font-semibold">Package</label>
+            <label className="text-xl font-semibold">Package</label>
             <select
               value={tourId}
               onChange={(e) => setTourId(e.target.value)}
@@ -94,7 +94,7 @@ export default function ItineraryPlanner() {
           </div>
 
           <div>
-            <label className="text-xs font-semibold">Arrival</label>
+            <label className="text-xl font-semibold">Arrival</label>
             <div className="mt-1 flex flex-col sm:flex-row gap-2">
               <input
                 type="date"
@@ -112,7 +112,7 @@ export default function ItineraryPlanner() {
           </div>
 
           <div>
-            <label className="text-xs font-semibold">Travellers</label>
+            <label className="text-xl font-semibold">Travellers</label>
             <input
               type="number"
               min={1}
@@ -156,7 +156,7 @@ export default function ItineraryPlanner() {
         )}
 
         {!plan && !error && (
-          <div className="p-8 bg-white rounded-2xl shadow text-center text-gray-600">
+          <div className="p-8 bg-white rounded-2xl text-xl shadow text-center text-gray-700">
             Choose a package and click <strong>Generate Itinerary</strong> to see AI suggestions.
           </div>
         )}
@@ -176,8 +176,8 @@ export default function ItineraryPlanner() {
                       {h.imageUrl && <img src={h.imageUrl} className="w-20 h-20 rounded-xl object-cover shadow" />}
                       <div>
                         <div className="font-medium">{h.name}</div>
-                        <div className="text-xs text-gray-500">{h.area} • {h.approxPriceRange}</div>
-                        <div className="text-xs text-gray-600">{h.recommendedFor}</div>
+                        <div className="text-xl text-gray-500">{h.area} • {h.approxPriceRange}</div>
+                        <div className="text-xl text-gray-600">{h.recommendedFor}</div>
                       </div>
                     </li>
                   )) || <li className="text-gray-500">No hotel suggestions</li>}
@@ -187,7 +187,7 @@ export default function ItineraryPlanner() {
               {/* Darshan Estimates */}
               <div className="bg-white rounded-2xl shadow-lg p-5 hover:scale-105 transition transform">
                 <div className="flex items-center gap-3 mb-3">
-                  <Clock size={20} /> <div className="font-semibold text-lg">Darshan Estimates</div>
+                  <Clock size={20} /> <div className="font-semibold text-xl">Darshan Estimates</div>
                 </div>
                 <ul className="space-y-3">
                   {plan.darshanEstimates?.map((d, idx) => (
@@ -195,8 +195,8 @@ export default function ItineraryPlanner() {
                       {d.imageUrl && <img src={d.imageUrl} className="w-20 h-20 rounded-xl object-cover shadow" />}
                       <div>
                         <div className="font-medium">{d.templeName}</div>
-                        <div className="text-xs text-gray-500">Slot: {d.recommendedSlot} • Wait: {d.estimatedWaitMinutes} mins</div>
-                        <div className="text-xs text-gray-600">{d.notes}</div>
+                        <div className="text-xl text-gray-500">Slot: {d.recommendedSlot} • Wait: {d.estimatedWaitMinutes} mins</div>
+                        <div className="text-xl text-gray-600">{d.notes}</div>
                       </div>
                     </li>
                   )) || <li className="text-gray-500">No darshan info</li>}
@@ -206,9 +206,9 @@ export default function ItineraryPlanner() {
               {/* Quick Info */}
               <div className="bg-white rounded-2xl shadow-lg p-5 hover:scale-105 transition transform">
                 <div className="flex items-center gap-3 mb-3">
-                  <MapPin size={20} /> <div className="font-semibold text-lg">Quick Info</div>
+                  <MapPin size={20} /> <div className="font-semibold text-xl">Quick Info</div>
                 </div>
-                <div className="space-y-2 text-sm text-gray-700">
+                <div className="space-y-2 text-xl text-gray-700">
                   <div><strong>Arrival:</strong> {arrivalDate || "—"} {arrivalTime || ""}</div>
                   <div><strong>Travellers:</strong> {travelers}</div>
                   <div><strong>Package:</strong> {TOUR_OPTIONS.find(o => o.id === tourId).label}</div>
@@ -222,7 +222,7 @@ export default function ItineraryPlanner() {
                 <div key={idx} className="bg-white rounded-2xl shadow-lg p-5 hover:scale-105 transition transform">
                   <div className="flex justify-between items-center mb-3">
                     <div>
-                      <div className="text-sm text-gray-500">Day {d.dayNumber}  {d.date || ""}</div>
+                      <div className="text-xl text-gray-500">Day {d.dayNumber}  {d.date || ""}</div>
                       <div className="text-xl font-semibold mt-1">Activities</div>
                     </div>
                   </div>
@@ -232,8 +232,8 @@ export default function ItineraryPlanner() {
                         {a.imageUrl && <img src={a.imageUrl} className="w-24 h-24 rounded-xl object-cover shadow" />}
                         <div className="flex-1">
                           <div className="font-medium text-lg">{a.title}</div>
-                          <div className="text-xs text-gray-600">{a.location} • {a.estimatedDurationMinutes} mins</div>
-                          <div className="text-xs text-gray-500 mt-1">{a.notes}</div>
+                          <div className="text-xl text-gray-600">{a.location} • {a.estimatedDurationMinutes} mins</div>
+                          <div className="text-xl text-gray-500 mt-1">{a.notes}</div>
                         </div>
                       </div>
                     )) || <div className="text-gray-500">No activities</div>}

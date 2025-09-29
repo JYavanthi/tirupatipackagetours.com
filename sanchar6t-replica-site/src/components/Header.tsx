@@ -144,7 +144,7 @@ const Header = () => {
   const menuItems = [
     { name: "Home", path: "/" },
     { name: "About", path: "/about-us" },
-    { name: "Tirupathi Packages", path: "/tirupati-package" }, 
+    { name: "Tirupati Packages", path: "/tirupati-package" }, 
     { name: "Contact", path: "/contact-us" },   // 🔹 updated path
    
   ];

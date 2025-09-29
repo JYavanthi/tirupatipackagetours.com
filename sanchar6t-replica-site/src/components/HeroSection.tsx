@@ -123,7 +123,7 @@ const HeroSection = () => {
     <section 
       style={{ 
         height: "80vh",
-        minHeight: "800px",
+        minHeight: "900px",
         position: "relative",
         display: "flex",
         alignItems: "center",

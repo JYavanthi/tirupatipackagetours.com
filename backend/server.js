@@ -247,6 +247,8 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
+
+
 // Database connection string for Windows Authentication
 const connectionString = `Server=${process.env.DB_SERVER};Database=${process.env.DB_NAME};Trusted_Connection=Yes;Driver={SQL Server Native Client 11.0}`;
 
