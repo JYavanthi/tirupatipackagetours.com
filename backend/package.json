@@ -10,6 +10,7 @@
   },
   "scripts": {
     "start": "node index.js",
-    "build-client": "cd ../sanchar6t-replica-site && npm install && npm run build && cp -r build ../backend/public"
+    "dev": "nodemon index.js",
+    "build-client": "cd ../sanchar6t-replica-site && npm install && npm run build && cp -r dist ../backend/public"
   }
 }

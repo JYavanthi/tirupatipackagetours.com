@@ -1,0 +1,18 @@
+{
+  "name": "tirupatipackagetours-monorepo",
+  "private": true,
+  "workspaces": [
+    "sanchar6t-replica-site",
+    "backend"
+  ],
+  "scripts": {
+    "install:all": "npm install --workspaces",
+    "build:frontend": "npm --workspace sanchar6t-replica-site run build",
+    "start:frontend": "npm --workspace sanchar6t-replica-site run dev",
+    "start:backend": "npm --workspace backend run dev",
+    "start": "concurrently \"npm run start:frontend\" \"npm run start:backend\""
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.0"
+  }
+}
