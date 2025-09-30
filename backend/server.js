@@ -195,6 +195,10 @@ const dbConfig = {
   }
 };
 
+app.get("*", (req, res) => {
+  res.sendFile(path.join(__dirname, "public", "index.html"));
+});
+
 // Helper function for queries
 async function queryAsync(query) {
   let pool;
