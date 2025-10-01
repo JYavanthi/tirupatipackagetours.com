@@ -175,7 +175,7 @@ require("dotenv").config();
 const app = express();
 app.use(cors());
 app.use(express.json());
-app.use(express.static(path.join(__dirname)));
+
 
 // ------------------- DATABASE CONFIG -------------------
 const dbConfig = {
@@ -195,10 +195,12 @@ const dbConfig = {
   }
 };
 
-// React routes
-app.get("/", (req, res) => {
-  res.sendFile(path.join(__dirname, "index.html"));
-});
+// Serve static files from the "public" folder
+app.use(express.static(path.join(process.cwd(), "public")));
+
+
+
+
 
 
 // Helper function for queries
@@ -341,7 +343,10 @@ app.post("/api/submit-feedback", async (req, res) => {
   }
 });
 
-
+// SPA fallback: serve index.html for all other routes
+app.get("*", (req, res) => {
+  res.sendFile(path.join(process.cwd(), "public", "index.html"));
+});
 // ------------------- START SERVER -------------------
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
